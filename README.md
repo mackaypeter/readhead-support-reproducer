@@ -7,7 +7,7 @@ Based on the generated JavaEE Web Project in Eclipse by Pete Muir Source: <https
 What is it?
 -----------
 
-This project reproduces an IllegalArgumentException thrown by Hibernate when creating a TypedQuery in connection with managed executor services, see
+This project reproduces an IllegalArgumentException thrown by Hibernate when creating a TypedQuery in connection with managed executor services and CDI-Beans (not EJBs), see
 <https://access.redhat.com/support/cases/#/case/02444670>
 
 
