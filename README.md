@@ -11,7 +11,7 @@ This project reproduces an IllegalArgumentException thrown by Hibernate when cre
 <https://access.redhat.com/support/cases/#/case/02444670>
 
 
-The project uses the original sources with some changes in the originally generated pom.xml, the persistence.xml and the reproducer method fpr EntityManager in Resources.
+The project uses the original sources with some changes in the originally generated pom.xml, the persistence.xml and the reproducer method for EntityManager in Resources.
 
 Both the dependencies and the production of an EntityManager are the ones used by our own project.
 
