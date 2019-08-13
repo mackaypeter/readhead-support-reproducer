@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import de.hessen.hzd.data.MemberRepository;
 import de.hessen.hzd.model.Member;
 
 /**
@@ -27,7 +28,7 @@ public class PollMembersTask implements Callable<Integer> {
 	private Logger log;
 
 	@Inject
-	private MemberEmitter memberEmitter;
+	private MemberRepository memberRepository;
 
 	private boolean shuttingDown = false;
 
@@ -41,7 +42,7 @@ public class PollMembersTask implements Callable<Integer> {
 			while (!shuttingDown && !Thread.currentThread().isInterrupted()) {
 
 				log.info("===== (2.2) ============");
-				List<Member> allMembers = memberEmitter.getAllMembers();
+				List<Member> allMembers = memberRepository.loadMembers();
 				log.info("===== (2.3): Number of members:" + allMembers.size() + " ============");
 				TimeUnit.MILLISECONDS.sleep(2000);
 			}
