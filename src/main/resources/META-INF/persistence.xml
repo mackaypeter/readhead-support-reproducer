@@ -26,7 +26,6 @@
       <exclude-unlisted-classes>true</exclude-unlisted-classes>
       <properties>
          <!-- Properties for Hibernate -->
- 		    <property name="jboss.entity.manager.jndi.name" value="java:/EntityManager/Reproducer_Persistence" />
 			<property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver" />
 			<property name="hibernate.proc.param_null_passing" value="true"/>
 			<property name="javax.persistence.validation.mode" value="none" />
