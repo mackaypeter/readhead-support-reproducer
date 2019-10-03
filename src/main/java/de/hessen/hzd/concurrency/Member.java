@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.hessen.hzd.model;
+package de.hessen.hzd.concurrency;
 
 import java.io.Serializable;
 
